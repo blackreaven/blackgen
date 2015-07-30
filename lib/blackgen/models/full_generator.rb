@@ -5,9 +5,7 @@ module Blackgen
     attr_accessor :step
 
     def initialize(charset, min=1, max=8)
-      @min = min
-      @max = max
-      @charset = charset
+      super(charset, min=1, max=8)
       @step = 0
     end
 
