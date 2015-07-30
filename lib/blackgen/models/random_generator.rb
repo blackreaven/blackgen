@@ -2,7 +2,7 @@ module Blackgen
   class RandomGenerator < Generator
     attr_accessor :step
 
-    def initialize(charset, min, max)
+    def initialize(charset, min=1, max=8)
       @min = min
       @max = max
       @charset = charset
