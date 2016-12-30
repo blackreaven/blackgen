@@ -9,6 +9,5 @@ module Blackgen
         puts self.step(i)
       end
     end
-
   end
 end

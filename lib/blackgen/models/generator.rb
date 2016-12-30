@@ -27,5 +27,13 @@ module Blackgen
 			str[0] = ''
 			return str
 		end
+
+		def last()
+			return ((1-@charset.length**(@max+1))/(1-@charset.length))-1
+		end
+
+		def first()
+			return ((1-@charset.length**(@min))/(1-@charset.length))
+		end
 	end
 end
